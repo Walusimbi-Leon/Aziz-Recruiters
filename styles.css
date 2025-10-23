@@ -1,0 +1,95 @@
+:root{
+  --primary:#0b72b9;
+  --accent:#f4a261;
+  --muted:#6b7280;
+  --bg:#f7f9fb;
+  --max-width:1100px;
+  --radius:8px;
+  --gap:16px;
+  font-family:Segoe UI, Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{margin:0;color:#111;background:var(--bg);line-height:1.45}
+.container{max-width:var(--max-width);margin:0 auto;padding:20px}
+
+/* Header */
+.site-header{background:#fff;border-bottom:1px solid #e6eef8;position:sticky;top:0;z-index:50}
+.header-inner{display:flex;align-items:center;gap:12px;justify-content:space-between}
+.brand{font-weight:700;color:var(--primary);text-decoration:none;font-size:1.25rem}
+.nav-toggle{display:none;border:0;background:none;font-size:1.3rem}
+.main-nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0}
+.main-nav a{color:#123;color:inherit;text-decoration:none;padding:8px 10px;border-radius:6px}
+.main-nav a.active{background:rgba(11,114,185,0.08);color:var(--primary)}
+.nav-actions{display:flex;align-items:center;gap:8px}
+.nav-actions input[type="search"]{padding:8px;border:1px solid #d6e6f6;border-radius:6px}
+
+/* Hero */
+.hero{padding:36px 0;background:linear-gradient(90deg,#ffffff 0%, #f3fbff 100%)}
+.hero-inner{display:flex;gap:20px;align-items:center}
+.hero-text{flex:1}
+.hero h1{margin:0 0 12px;font-size:1.9rem;color:#07355a}
+.hero p{color:var(--muted);margin:0 0 16px}
+.hero-ctas .btn{margin-right:8px}
+.hero-image{width:260px;height:140px;background:linear-gradient(135deg,var(--primary),#6fc3ff);border-radius:10px}
+
+/* Search controls */
+.search-controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.search-controls input, .search-controls select{padding:10px;border-radius:8px;border:1px solid #e1eef9;min-width:180px}
+
+/* Jobs grid */
+.jobs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:12px}
+.job-card{background:#fff;padding:12px;border-radius:8px;box-shadow:0 1px 2px rgba(16,24,40,0.04);border:1px solid #eef6fb}
+.job-card h4{margin:0 0 6px;font-size:1.05rem}
+.job-meta{font-size:0.9rem;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}
+.job-actions{display:flex;gap:8px;margin-top:10px}
+
+/* Categories */
+.categories{margin-top:24px}
+.category-list{display:flex;gap:8px;flex-wrap:wrap}
+.category{background:#fff;padding:8px 12px;border-radius:20px;text-decoration:none;color:#0b72b9;border:1px solid #e6eef8}
+
+/* How it works */
+.how-it-works .steps{display:flex;gap:12px;list-style:none;padding:0;margin:12px 0}
+.how-it-works .steps li{background:#fff;padding:14px;border-radius:8px;flex:1;border:1px solid #eef6fb}
+
+/* Testimonials */
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:12px 0}
+blockquote{background:#fff;padding:12px;border-radius:8px;border:1px solid #eef6fb;margin:0}
+cite{display:block;color:var(--muted);font-size:0.9rem;margin-top:8px}
+
+/* Partners */
+.partners-logos{display:flex;gap:10px;align-items:center}
+.logo{background:#fff;padding:8px 12px;border-radius:6px;color:var(--muted);border:1px solid #eef6fb}
+
+/* Modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(2,6,23,0.45)}
+.modal[aria-hidden="false"]{display:flex}
+.modal-content{background:#fff;padding:18px;border-radius:10px;max-width:520px;width:100%;position:relative;border:1px solid #eaf4ff}
+.modal-close{position:absolute;right:10px;top:8px;border:0;background:none;font-size:1.4rem}
+.modal-content label{display:block;margin:8px 0}
+.modal-content input,.modal-content textarea{width:100%;padding:8px;border-radius:6px;border:1px solid #e6eef8}
+
+/* Footer */
+.site-footer{background:#0b72b9;color:#fff;padding:24px 0;margin-top:24px}
+.footer-inner{display:flex;gap:20px;flex-wrap:wrap}
+.footer-col h4{margin:0 0 8px}
+.site-note{background:#083f63;color:#e7f5ff;padding:12px;margin-top:12px;border-top:1px solid rgba(255,255,255,0.06)}
+
+/* Buttons */
+.btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;border:1px solid transparent;background:#fff;color:#123;cursor:pointer}
+.btn.primary{background:var(--primary);color:#fff;border-color:var(--primary)}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.12);color:#fff}
+
+/* Utilities */
+.feedback{color:green;font-size:0.9rem;margin-top:8px}
+
+/* Responsive */
+@media(max-width:900px){
+  .hero-inner{flex-direction:column;align-items:flex-start}
+  .header-inner{gap:10px}
+  .main-nav{display:none}
+  .nav-toggle{display:block}
+  .nav-actions input[type="search"]{display:none}
+  .modal-content{max-height:80vh;overflow:auto}
+}

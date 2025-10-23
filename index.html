@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aziz Recruiters</title>
+    <meta name="description" content="Aziz Recruiters — connecting skilled African workers with opportunities across the Middle East. Jobs, support, and safe placement.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Aziz Recruiters</a>
+
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+            <nav id="main-nav" class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="jobs.html">Job Opportunities</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <input id="quick-search" type="search" placeholder="Search jobs, e.g. electrician">
+                <a href="apply.html" class="btn primary">Apply Now</a>
+                <a href="#" class="btn ghost">For Employers</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>Connecting African Talent with Opportunities in the Middle East</h1>
+                    <p>Trusted recruitment, compliant placements, pre-departure support, and ongoing assistance for workers and employers.</p>
+                    <div class="hero-ctas">
+                        <a href="jobs.html" class="btn primary">Browse Jobs</a>
+                        <a href="apply.html" class="btn ghost">How to Apply</a>
+                    </div>
+                </div>
+                <div class="hero-image" aria-hidden="true">
+                    <!-- decorative -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Search + Filters -->
+        <section class="search-section container">
+            <div class="search-controls">
+                <input id="search-keyword" type="text" placeholder="Keyword, role or skill">
+                <select id="search-country">
+                    <option value="">Any destination (UAE, KSA, Qatar...)</option>
+                    <option value="UAE">UAE</option>
+                    <option value="KSA">KSA</option>
+                    <option value="Qatar">Qatar</option>
+                </select>
+                <select id="search-category">
+                    <option value="">All categories</option>
+                    <option value="Construction">Construction</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Hospitality">Hospitality</option>
+                    <option value="Domestic">Domestic</option>
+                </select>
+                <button id="search-btn" class="btn primary">Search</button>
+            </div>
+        </section>
+
+        <!-- Featured Jobs -->
+        <section class="container featured-jobs" aria-labelledby="featured-jobs-title">
+            <h2 id="featured-jobs-title">Featured Jobs</h2>
+            <div id="jobs-list" class="jobs-grid">
+                <!-- JS will render job cards here -->
+            </div>
+            <div class="more-jobs">
+                <a href="jobs.html" class="btn">View all jobs</a>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="container categories">
+            <h3>Popular Categories</h3>
+            <div class="category-list">
+                <a href="#" class="category">Construction</a>
+                <a href="#" class="category">Healthcare</a>
+                <a href="#" class="category">Hospitality</a>
+                <a href="#" class="category">Domestic</a>
+                <a href="#" class="category">IT & Technical</a>
+            </div>
+        </section>
+
+        <!-- How it Works -->
+        <section class="container how-it-works" aria-labelledby="how-title">
+            <h2 id="how-title">How Aziz Recruiters Works</h2>
+            <ol class="steps">
+                <li>
+                    <strong>Apply</strong>
+                    <p>Submit your profile or CV. We screen and match you to suitable roles.</p>
+                </li>
+                <li>
+                    <strong>Interview & Placement</strong>
+                    <p>We coordinate interviews and verify contracts, salaries, and benefits.</p>
+                </li>
+                <li>
+                    <strong>Pre-departure & Support</strong>
+                    <p>Document guidance, orientation, and post-placement follow-up.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="container testimonials" aria-labelledby="testimonials-title">
+            <h2 id="testimonials-title">Success Stories</h2>
+            <div class="testimonials-grid">
+                <blockquote>
+                    <p>"Aziz helped me find a safe job in the UAE. The team guided me through the whole process."</p>
+                    <cite>— Amina, Kenya</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Professional and supportive from interview to arrival. Highly recommended."</p>
+                    <cite>— Samuel, Ghana</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Mr.Aziz and his team helped me find the best job, The company worked on the process."</p>
+                    <cite>— Mugerwa William, Uganda</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Partners -->
+        <section class="container partners">
+            <h3>Trusted by Employers</h3>
+            <div class="partners-logos" aria-hidden="true">
+                <span class="logo">Company A</span>
+                <span class="logo">Company B</span>
+                <span class="logo">Company C</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Apply Modal -->
+    <div id="apply-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="apply-title">
+            <button id="modal-close" class="modal-close" aria-label="Close">×</button>
+            <h3 id="apply-title">Apply for Job</h3>
+            <form id="apply-form">
+                <input type="hidden" id="apply-job-id">
+                <label>
+                    Full name
+                    <input id="applicant-name" type="text" required>
+                </label>
+                <label>
+                    Phone / WhatsApp
+                    <input id="applicant-phone" type="tel" required>
+                </label>
+                <label>
+                    Country
+                    <input id="applicant-country" type="text" required>
+                </label>
+                <label>
+                    Notes / Experience
+                    <textarea id="applicant-notes" rows="4"></textarea>
+                </label>
+                <div class="modal-actions">
+                    <button type="submit" class="btn primary">Send Application</button>
+                    <button type="button" id="modal-cancel" class="btn ghost">Cancel</button>
+                </div>
+                <p id="apply-feedback" class="feedback" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h4>Aziz Recruiters</h4>
+                <p>Connecting African workers with dignified employment in the Middle East. Compliance-first placements and ongoing support.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <form id="newsletter-form">
+                    <input id="newsletter-email" type="email" placeholder="Email address">
+                    <button type="submit" class="btn">Subscribe</button>
+                    <p id="newsletter-feedback" class="feedback" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+        <div class="site-note container">
+            <p>&copy; <span id="year">2023</span> Aziz Recruiters. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

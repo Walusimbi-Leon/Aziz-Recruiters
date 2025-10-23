@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Software Engineer",
+        "description": "We are looking for a skilled Software Engineer to join our team in Dubai. The ideal candidate should have experience in web development and a passion for technology.",
+        "location": "Dubai, UAE",
+        "application_link": "https://azizrecruiters.com/apply?job=software-engineer"
+    },
+    {
+        "title": "Project Manager",
+        "description": "Aziz Recruiters is seeking a Project Manager to oversee various projects in the Middle East. Strong leadership and communication skills are required.",
+        "location": "Abu Dhabi, UAE",
+        "application_link": "https://azizrecruiters.com/apply?job=project-manager"
+    },
+    {
+        "title": "Graphic Designer",
+        "description": "Join our creative team as a Graphic Designer. You will be responsible for creating visual content for our clients in the Middle East.",
+        "location": "Doha, Qatar",
+        "application_link": "https://azizrecruiters.com/apply?job=graphic-designer"
+    },
+    {
+        "title": "Data Analyst",
+        "description": "We are looking for a Data Analyst to help us make data-driven decisions. The role requires strong analytical skills and experience with data visualization tools.",
+        "location": "Riyadh, Saudi Arabia",
+        "application_link": "https://azizrecruiters.com/apply?job=data-analyst"
+    },
+    {
+        "title": "Sales Executive",
+        "description": "Aziz Recruiters is hiring a Sales Executive to drive sales and build relationships with clients in the Middle East. Experience in sales is a plus.",
+        "location": "Kuwait City, Kuwait",
+        "application_link": "https://azizrecruiters.com/apply?job=sales-executive"
+    }
+]
