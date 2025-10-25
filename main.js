@@ -3,10 +3,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   // sample job data
   const jobs = [
-    { id: 'j1', title: 'Construction Supervisor', country: 'UAE', category: 'Construction', salary: 'USD 700 - 900', description: 'Supervise site works, ensure safety & productivity.' },
+    { id: 'j1', title: 'House Manager', country: 'Qatar', category: 'House Keeping', salary: 'QTR 1,500 - 2,000', description: 'Taking care for the house when your bosses are not around, Taking care for the children of your bosses & Doing relevant house duties like mopping.' },
     { id: 'j2', title: 'Hospitality Manager', country: 'KSA', category: 'Hospitality', salary: 'USD 800 - 1000', description: 'Manage hotel operations and guest relations.' },
     { id: 'j3', title: 'Nurse (General)', country: 'Qatar', category: 'Healthcare', salary: 'USD 600 - 900', description: 'Qualified nurse with valid license.' },
     { id: 'j4', title: 'Domestic Worker', country: 'UAE', category: 'Domestic', salary: 'USD 250 - 400', description: 'Household duties, childcare, and cleaning.' }
+    { id: 'j5', title: 'House Manager', country: 'Qatar', category: 'House Keeping', salary: 'QTR 1,500 - 2,000', description: 'Taking care for the house when your bosses are not around, Taking care for the children of your bosses & Doing relevant house duties like mopping.' },
+    { id: 'j6', title: 'House Manager', country: 'Qatar', category: 'House Keeping', salary: 'QTR 1,500 - 2,000', description: 'Taking care for the house when your bosses are not around, Taking care for the children of your bosses & Doing relevant house duties like mopping.' },
+    { id: 'j7', title: 'House Manager', country: 'Qatar', category: 'House Keeping', salary: 'QTR 1,500 - 2,000', description: 'Taking care for the house when your bosses are not around, Taking care for the children of your bosses & Doing relevant house duties like mopping.' },
   ];
 
   const jobsList = document.getElementById('jobs-list');
