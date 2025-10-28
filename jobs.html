@@ -22,7 +22,49 @@
     <main>
         <section id="job-listings">
             <h2>Available Jobs</h2>
-            <div id="jobs-container"></div>
+            <div id="jobs-container">
+                <!-- Featured Jobs -->
+        <section class="container featured-jobs" aria-labelledby="featured-jobs-title">
+            <h2 id="featured-jobs-title">Featured Jobs</h2>
+            <div id="jobs-list" class="jobs-grid">
+                <!-- JS will render job cards here -->
+            </div>
+            <div class="more-jobs">
+                <a href="jobs.html" class="btn">View all jobs</a>
+            </div>
+            <!-- Apply Modal -->
+    <div id="apply-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="apply-title">
+            <button id="modal-close" class="modal-close" aria-label="Close">×</button>
+            <h3 id="apply-title">Apply for Job</h3>
+            <form id="apply-form">
+                <input type="hidden" id="apply-job-id">
+                <label>
+                    Full name
+                    <input id="applicant-name" type="text" required>
+                </label>
+                <label>
+                    Phone / WhatsApp
+                    <input id="applicant-phone" type="tel" required>
+                </label>
+                <label>
+                    Country
+                    <input id="applicant-country" type="text" required>
+                </label>
+                <label>
+                    Notes / Experience
+                    <textarea id="applicant-notes" rows="4"></textarea>
+                </label>
+                <div class="modal-actions">
+                    <button type="submit" class="btn primary">Send Application</button>
+                    <button type="button" id="modal-cancel" class="btn ghost">Cancel</button>
+                </div>
+                <p id="apply-feedback" class="feedback" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+        </section>
+            </div>
         </section>
     </main>
     <footer>
