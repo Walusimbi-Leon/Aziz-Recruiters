@@ -3,13 +3,18 @@
 document.addEventListener('DOMContentLoaded', () => {
   // sample job data
   const jobs = [
-    { id: 'j1', title: 'House Manager', country: 'Qatar', category: 'House Keeping', salary: 'QTR 1,500 - 2,000', description: 'Taking care for the house when your bosses are not around, Taking care for the children of your bosses & Doing relevant house duties like mopping.' },
-    { id: 'j2', title: 'Hospitality Manager', country: 'KSA', category: 'Hospitality', salary: 'USD 800 - 1000', description: 'Manage hotel operations and guest relations.' },
-    { id: 'j3', title: 'Nurse (General)', country: 'Qatar', category: 'Healthcare', salary: 'USD 600 - 900', description: 'Qualified nurse with valid license.' },
-    { id: 'j4', title: 'Domestic Worker', country: 'UAE', category: 'Domestic', salary: 'USD 250 - 400', description: 'Household duties, childcare, and cleaning.' }
-    { id: 'j5', title: 'House Manager', country: 'Qatar', category: 'House Keeping', salary: 'QTR 1,500 - 2,000', description: 'Taking care for the house when your bosses are not around, Taking care for the children of your bosses & Doing relevant house duties like mopping.' },
-    { id: 'j6', title: 'House Manager', country: 'Qatar', category: 'House Keeping', salary: 'QTR 1,500 - 2,000', description: 'Taking care for the house when your bosses are not around, Taking care for the children of your bosses & Doing relevant house duties like mopping.' },
-    { id: 'j7', title: 'House Manager', country: 'Qatar', category: 'House Keeping', salary: 'QTR 1,500 - 2,000', description: 'Taking care for the house when your bosses are not around, Taking care for the children of your bosses & Doing relevant house duties like mopping.' },
+    { id: 'j1', title: 'House Manager', country: 'Qatar', category: 'House Managing', salary: 'QAR 1,500 - 2,000', description: 'Taking care of the house when your bosses are not at home, Keeping and looking after the children of your bosses.' },
+    { id: 'j2', title: 'Hospital Cleaner', country: 'Qatar', category: 'Cleaning', salary: 'QAR 1,800 - 2,500', description: 'Cleaning in the hospital.' },
+    { id: 'j3', title: 'Assistant Nurse ', country: 'UAE', category: 'Healthcare', salary: 'AED 2,200 - 2,800', description: 'Qualified nurse with valid Certificate.' },
+    { id: 'j4', title: 'House Keeper', country: 'Qatar', category: 'House Managing', salary: 'QAR 1,200 - 1,400', description: 'Household duties, childcare, and cleaning.' },
+    { id: 'j5', title: 'House Keeper', country: 'Qatar', category: 'House Managing', salary: 'QAR 1,200 - 1,500', description: 'Household duties, childcare, and cleaning.' },
+    { id: 'j6', title: 'Security Personel', country: 'Dubai', category: 'Security', salary: 'USD 700 - 900', description: 'Ensuring safety & providing Security.' },
+    { id: 'j7', title: 'House Maid', country: 'Qatar', category: 'House Managing', salary: 'AED 1,300 - 1,600', description: 'Household duties, childcare, and cleaning.' },
+    { id: 'j8', title: 'House Maid', country: 'Qatar', category: 'House Managing', salary: 'QAR 1,200 - 1,500', description: 'Household duties, childcare, and cleaning.' },
+    { id: 'j9', title: 'Security Personel', country: 'Qatar', category: 'Security', salary: 'QAR 1,200 - 1,500', description: 'Ensuring safety & providing Security.' },
+    { id: 'j10', title: 'House Maid', country: 'Qatar', category: 'House Managing', salary: 'QAR 1,200 - 1,500', description: 'Household duties, childcare, and cleaning.' },
+    { id: 'j11', title: 'House Maid', country: 'Qatar', category: 'House Managing', salary: 'QAR 1,200 - 1,500', description: 'Household duties, childcare, and cleaning.' },
+    { id: 'j12', title: 'House Maid', country: 'Qatar', category: 'House Managing', salary: 'QAR 1,200 - 1,500', description: 'Household duties, childcare, and cleaning.' },
   ];
 
   const jobsList = document.getElementById('jobs-list');
@@ -128,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
       fb.textContent = 'Please enter a valid email.';
       return;
     }
-    fb.style.color = 'green';
+    fb.style.color = 'Blue';
     fb.textContent = 'Subscribed — thank you!';
     nlForm.reset();
   });
