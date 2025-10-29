@@ -27,7 +27,7 @@
             <div class="nav-actions">
                 <input id="quick-search" type="search" placeholder="Search jobs, e.g. electrician">
                 <a href="apply.html" class="btn primary">Apply Now</a>
-                <a href="#" class="btn ghost">For Employers</a>
+                <a href="#" class="btn ghost" style="display: none;">For Employers</a>
             </div>
         </div>
     </header>
@@ -41,7 +41,7 @@
                     <p>Trusted recruitment, compliant placements, pre-departure support, and ongoing assistance for workers and employers.</p>
                     <div class="hero-ctas">
                         <a href="jobs.html" class="btn primary">Browse Jobs</a>
-                        <a href="apply.html" class="btn ghost">How to Apply</a>
+                        <a href="apply.html" class="btn ghost" style="display: none;">How to Apply</a>
                     </div>
                 </div>
                 <div class="hero-image" aria-hidden="true">
@@ -193,9 +193,10 @@
                 </ul>
             </div>
             <div class="footer-col">
+                <p>Please leave us your Email if you want to be updated with New Job Opportunities.</p>
                 <h4>Newsletter</h4>
                 <form id="newsletter-form">
-                    <input id="newsletter-email" type="email" placeholder="Email address">
+                    <input id="newsletter-email" type="email" placeholder="Email address" class="in-newsletter">
                     <button type="submit" class="btn">Subscribe</button>
                     <p id="newsletter-feedback" class="feedback" aria-live="polite"></p>
                 </form>
