@@ -1,0 +1,4 @@
+-- SQLite
+CREATE TABLE IF NOT EXISTS Subscribers (
+email VARCHAR(225) NOT NULL
+);
