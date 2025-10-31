@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Aziz Recruiters</a>
+
+            <button id="nav-toggle2" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <nav id="main-nav2" class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="jobs.html">Job Opportunities</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <input id="quick-search" type="search" placeholder="Search jobs, e.g. electrician">
+                <a href="index.html" class="btn primary">Home</a>
+                <a href="#" class="btn ghost" style="display: none;">For Employers</a>
+            </div>
+            </div>
+        </div>
         <h1>About Aziz Recruiters</h1>
     </header>
     <main>
@@ -30,7 +50,9 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Aziz Recruiters. All rights reserved.</p>
+        <div class="site-note container">
+            <p>&copy; <span id="year">2023</span> Aziz Recruiters. All rights reserved.</p>
+        </div>
     </footer>
     <script src="js/main.js"></script>
 </body>

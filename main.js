@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: 'j3', title: 'Assistant Nurse ', country: 'UAE', category: 'Healthcare', salary: 'AED 2,200 - 2,800', description: 'Qualified nurse with valid Certificate.' },
     { id: 'j4', title: 'House Keeper', country: 'Qatar', category: 'House Managing', salary: 'QAR 1,200 - 1,400', description: 'Household duties, childcare, and cleaning.' },
     { id: 'j5', title: 'House Keeper', country: 'Qatar', category: 'House Managing', salary: 'QAR 1,200 - 1,500', description: 'Household duties, childcare, and cleaning.' },
-    { id: 'j6', title: 'Security Personel', country: 'Dubai', category: 'Security', salary: 'USD 700 - 900', description: 'Ensuring safety & providing Security.' },
+    { id: 'j6', title: 'Security Personel', country: 'Dubai', category: 'Security', salary: 'AED 1,500 - 2,000', description: 'Ensuring safety & providing Security.' },
     { id: 'j7', title: 'House Maid', country: 'Qatar', category: 'House Managing', salary: 'AED 1,300 - 1,600', description: 'Household duties, childcare, and cleaning.' },
     { id: 'j8', title: 'House Maid', country: 'Qatar', category: 'House Managing', salary: 'QAR 1,200 - 1,500', description: 'Household duties, childcare, and cleaning.' },
     { id: 'j9', title: 'Security Personel', country: 'Qatar', category: 'Security', salary: 'QAR 1,200 - 1,500', description: 'Ensuring safety & providing Security.' },
@@ -70,6 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (nav.style.display === 'block') nav.style.display = '';
     else nav.style.display = 'block';
   });
+  document.getElementById('nav-toggle2')?.addEventListener('click', () => {
+    const nav = document.getElementById('main-nav2');
+    if (nav.style.display === 'block') nav.style.display = '';
+    else nav.style.display = 'block';
+  });
 
   // Delegate apply button clicks to open modal
   jobsList.addEventListener('click', (e) => {
@@ -111,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
       feedback.textContent = 'Please fill required fields.';
       return;
     }
-
     // Save application locally (demo). Replace with server call when available.
     const apps = JSON.parse(localStorage.getItem('aziz_applications') || '[]');
     apps.push({ id: id || 'unknown', name, phone, country, notes, time: new Date().toISOString() });
@@ -139,5 +143,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Footer year
-  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('year').textContent =  Date(2023).getFullYear(2023);
 });

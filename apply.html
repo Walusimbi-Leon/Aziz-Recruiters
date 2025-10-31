@@ -33,13 +33,15 @@
             <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
 
             <label for="cover-letter">Cover Letter:</label>
-            <textarea id="cover-letter" name="cover-letter" rows="4" required></textarea>
+            <input id="cover-letter" name="cover-letter" rows="4" optional></input>
 
             <button type="submit">Submit Application</button>
         </form>
     </main>
     <footer>
-        <p>&copy; 2023 Aziz Recruiters. All rights reserved.</p>
+        <div class="site-note container">
+            <p>&copy; <span id="year">2023</span> Aziz Recruiters. All rights reserved.</p>
+        </div>
     </footer>
     <script src="js/main.js"></script>
 </body>

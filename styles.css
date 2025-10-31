@@ -93,3 +93,104 @@ cite{display:block;color:var(--muted);font-size:0.9rem;margin-top:8px}
   .nav-actions input[type="search"]{display:none}
   .modal-content{max-height:80vh;overflow:auto}
 }
+/* index.html */
+.in-newsletter {
+  color: black;
+  font-weight: bolder;
+  background-color: #a186ec;
+  padding: 2%;
+  bottom: 0%;
+  border: solid transparent;
+  border-radius: 10px;
+}
+.in-newsletter:hover {
+  border: 0px;
+  background-color: #a186ec;
+}
+#newsletter-feedback {
+  font-weight: bolder;
+  font-size: large;
+}
+#applicant-notes {
+  background-color: transparent;
+  resize: none;
+}
+.whatsapp-link {
+  color: chartreuse;
+}
+.btn112 {
+  padding: 1.2%;
+  background-color: #6fb9eb;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+.btn112:hover {
+cursor: pointer;
+}
+.quick-links {
+  font-weight: bolder;
+}
+.job-details {
+  display: none;
+}
+/* contact.html */
+.form11 {
+background: #fff;
+    width: 450px;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+}
+input {
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border:none;
+    border-bottom:1px solid #757575;
+    padding-left:1.5rem;
+    font-size: 15px;
+}
+.input-group {
+    padding: 1% 0;
+    position: relative;
+}
+.input-group i {
+    position: absolute;
+    color: black;
+}
+input:focus{
+    background-color:transparent;
+    outline: transparent;
+    border-bottom: 2px solid hsl(327,90%,28%);
+}
+input::placeholder{
+    color: transparent;
+}
+label {
+    color: #757575;
+    position: relative;
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+.btn:hover{
+    background: #07001f;
+}
+textarea {
+  width: 40%;
+  background-color: #0b72b9;
+  height: 50%;
+}
+.btn111 {
+  font-weight: bolder;
+  padding: 2.5%;
+}
+.btn111:hover {
+color: #f4a261;
+background-color:#123;
+}
+/* apply.html */
+#resume {
+  background-color: transparent;
+  border: none;
+}

@@ -27,7 +27,7 @@
             <div class="nav-actions">
                 <input id="quick-search" type="search" placeholder="Search jobs, e.g. electrician">
                 <a href="apply.html" class="btn primary">Apply Now</a>
-                <a href="#" class="btn ghost">For Employers</a>
+                <a href="#" class="btn ghost" style="display: none;">For Employers</a>
             </div>
         </div>
     </header>
@@ -41,7 +41,7 @@
                     <p>Trusted recruitment, compliant placements, pre-departure support, and ongoing assistance for workers and employers.</p>
                     <div class="hero-ctas">
                         <a href="jobs.html" class="btn primary">Browse Jobs</a>
-                        <a href="apply.html" class="btn ghost">How to Apply</a>
+                        <a href="apply.html" class="btn ghost" style="display: none;">How to Apply</a>
                     </div>
                 </div>
                 <div class="hero-image" aria-hidden="true">
@@ -55,17 +55,16 @@
             <div class="search-controls">
                 <input id="search-keyword" type="text" placeholder="Keyword, role or skill">
                 <select id="search-country">
-                    <option value="">Any destination (UAE, KSA, Qatar...)</option>
+                    <option value="">Any destination (UAE, Qatar...)</option>
                     <option value="UAE">UAE</option>
-                    <option value="KSA">KSA</option>
                     <option value="Qatar">Qatar</option>
                 </select>
                 <select id="search-category">
                     <option value="">All categories</option>
-                    <option value="Construction">Construction</option>
+                    <option value="House Managing">House Managing</option>
                     <option value="Healthcare">Healthcare</option>
-                    <option value="Hospitality">Hospitality</option>
-                    <option value="Domestic">Domestic</option>
+                    <option value="Security">Security</option>
+                    <option value="Cleaning">Cleaning</option>
                 </select>
                 <button id="search-btn" class="btn primary">Search</button>
             </div>
@@ -86,11 +85,10 @@
         <section class="container categories">
             <h3>Popular Categories</h3>
             <div class="category-list">
-                <a href="#" class="category">Construction</a>
+                <a href="#" class="category">House Managing</a>
                 <a href="#" class="category">Healthcare</a>
-                <a href="#" class="category">Hospitality</a>
-                <a href="#" class="category">Domestic</a>
-                <a href="#" class="category">IT & Technical</a>
+                <a href="#" class="category">Security</a>
+                <a href="#" class="category">Cleaning</a>
             </div>
         </section>
 
@@ -129,6 +127,14 @@
                     <p>"Mr.Aziz and his team helped me find the best job, The company worked on the process."</p>
                     <cite>— Mugerwa William, Uganda</cite>
                 </blockquote>
+                <blockquote>
+                    <p>"I made it to the UAE, with the help from Aziz recruiters."</p>
+                    <cite>— Namirro Hellen, Uganda, Healthcare assistant</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"From Uganda to Dubai, opportunity found me here."</p>
+                    <cite>— Nanssereko Jesca, Uganda, Cleaner</cite>
+                </blockquote>
             </div>
         </section>
 
@@ -136,9 +142,9 @@
         <section class="container partners">
             <h3>Trusted by Employers</h3>
             <div class="partners-logos" aria-hidden="true">
-                <span class="logo">Company A</span>
-                <span class="logo">Company B</span>
-                <span class="logo">Company C</span>
+                <span class="logo">Qatar Foundation</span>
+                <span class="logo">Al Emadi Hospital</span>
+                <span class="logo">Transguard Group</span>
             </div>
         </section>
     </main>
@@ -182,20 +188,24 @@
                 <p>Contact Aziz on WhatsApp</p>
                 <p>WhatsApp: +974 3141 9545</p>
                 <p>WhatsApp: +974 3080 9151</p>
+                <a href="https://wa.me/+974 3141 9545?text=Hello Mr.Aziz%20there!" class="whatsapp-link"><button class="btn112" >Send Message to Mr.Aziz <br>on WhatsApp</button></a>
                 <p>Connecting African workers with dignified employment in the Middle East. Compliance-first placements and ongoing support.</p>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
+                    <div class="quick-links">
                     <li><a href="jobs.html">Jobs</a></li>
                     <li><a href="apply.html">Apply</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    </div>
                 </ul>
             </div>
             <div class="footer-col">
+                <p>Please leave us your Email if you want to be updated with New Job Opportunities.</p>
                 <h4>Newsletter</h4>
                 <form id="newsletter-form">
-                    <input id="newsletter-email" type="email" placeholder="Email address">
+                    <input id="newsletter-email" type="email" placeholder="Email address" class="in-newsletter">
                     <button type="submit" class="btn">Subscribe</button>
                     <p id="newsletter-feedback" class="feedback" aria-live="polite"></p>
                 </form>
@@ -205,7 +215,37 @@
             <p>&copy; <span id="year">2023</span> Aziz Recruiters. All rights reserved.</p>
         </div>
     </footer>
-
+    <div>
+        <!-- Job Details -->
+         <div id="details-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="apply-title">
+            <button id="details-close" class="modal-close" aria-label="Close">×</button>
+            <h3 id="apply-title">Job Details</h3>
+            <form id="details-form">
+                <input type="hidden" id="details-job-id">
+                <label>
+                    Full name
+                    <input id="applicant-name" type="text" required>
+                </label>
+                <label>
+                    Phone / WhatsApp
+                    <input id="applicant-phone" type="tel" required>
+                </label>
+                <label>
+                    Country
+                    <input id="applicant-country" type="text" required>
+                </label>
+                <label>
+                    Notes / Experience
+                    <textarea id="applicant-notes" rows="4"></textarea>
+                </label>
+                <div class="modal-actions">
+                    <button type="submit" class="btn primary">Send Application</button>
+                    <button type="button" id="details-cancel" class="btn ghost">Cancel</button>
+                </div>
+                <p id="details-feedback" class="feedback" aria-live="polite"></p>
+            </form>
+        </div>
     <script src="js/main.js"></script>
 </body>
 </html>
